@@ -1,42 +1,73 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Reset básico */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Evita scroll horizontal */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Contenedor principal */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  background: #f4f6f8;
+  width: 100vw; /* Asegura que no se pase del ancho de la ventana */
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  max-width: 240px;
+  background: #232946;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 8px rgba(44, 62, 80, 0.08);
+  min-height: 100vh;
+  transition: width 0.2s;
+  overflow-x: hidden;
+}
+
+.sidebar .logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.sidebar nav {
+  flex: 1;
+}
+
+
+@media (max-width: 900px) {
+  .app-container {
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100vw;
   }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+
+/* Títulos y textos */
+h2 {
+  color: #232946;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+p {
+  color: #555;
+  font-size: 1.1rem;
 }

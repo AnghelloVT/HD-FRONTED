@@ -1,0 +1,165 @@
+/*Estilos generales */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left {
+  flex: 1;
+  background-image: url('../assets/img/carritotambo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.right {
+  flex: 1;
+  background-color: #f7f7f7;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Logo  */
+.form-logo {
+  width: 120px;
+  margin-bottom: 20px;
+  animation: moverLogo 1.5s ease-in-out 1;
+}
+
+/* Animación corta al logo */
+
+@keyframes moverLogo {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px); 
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Título Registro */
+.form-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #28a745; /* verde */
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Formulario */
+.brand-form {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.brand-input {
+  padding: 12px 15px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.brand-input::placeholder {
+  color: #999;
+}
+
+.brand-input:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Mensajes de error */
+.error-message {
+  color: #f44336;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-style: italic;
+  text-align: left;
+}
+
+/* Botones */
+.brand-submit-btn,
+.brand-login-btn {
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+  border: none;
+}
+
+/* Botón Registrarse*/
+.brand-submit-btn {
+  background-color: #6f42c1; 
+  color: white;
+}
+
+.brand-submit-btn:hover {
+  background-color: #552a99;
+}
+
+/* Botón Iniciar sesión*/
+.brand-login-btn {
+  background-color: white;
+  color: #6f42c1;
+  border: 2px solid #6f42c1;
+}
+
+.brand-login-btn:hover {
+  background-color: #b392f0;
+  color: white;
+}
+
+/* Mensaje éxito */
+.success-message {
+  color: #28a745;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    height: 250px;
+    width: 100vw;
+    flex: none;
+  }
+
+  .right {
+    padding: 20px 30px;
+  }
+}
