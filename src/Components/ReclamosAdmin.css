@@ -1,0 +1,251 @@
+.admin-container {
+  padding: 2rem;
+}
+
+.reclamos-admin-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.reclamos-admin-title {
+  color: #22223b;
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.reclamos-admin-cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.reclamos-admin-card {
+  background: #f7f9fb;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+  padding: 1.2rem 2rem;
+  min-width: 180px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border: 1px solid #dbe2ef;
+}
+
+.reclamos-admin-card-total span:last-child {
+  font-size: 32px;
+  font-weight: 700;
+  color: #22223b;
+}
+
+.reclamos-admin-card-pendientes {
+  background: #e9ecef;
+  border: 1px solid #adb5bd;
+}
+
+.reclamos-admin-card-pendientes span:last-child {
+  font-size: 32px;
+  font-weight: 700;
+  color: #495057;
+}
+
+.reclamos-admin-card-resueltos {
+  background: #dde7f2;
+  border: 1px solid #b8c1ec;
+}
+
+.reclamos-admin-card-resueltos span:last-child {
+  font-size: 32px;
+  font-weight: 700;
+  color: #495057;
+}
+
+.reclamos-admin-form {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 32px;
+  background: #f7f9fb;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+  border: 1px solid #dbe2ef;
+}
+
+.reclamos-admin-form input,
+.reclamos-admin-form select {
+  flex: 1;
+  min-width: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #b8c1ec;
+  font-size: 1rem;
+  background: #fff;
+  color: #22223b;
+}
+
+.reclamos-admin-form button {
+  background: #22223b;
+  color: #f7f9fb;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+  transition: background 0.2s;
+}
+
+.reclamos-admin-form button:hover {
+  background: #3a3a5a;
+}
+
+.reclamos-admin-mensaje {
+  color: #197278;
+  font-weight: 600;
+  margin-left: 16px;
+  font-size: 1rem;
+}
+
+.reclamos-admin-busqueda {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reclamos-admin-busqueda input {
+  flex: 1;
+  min-width: 180px;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1.5px solid #b8c1ec;
+  background: #fff;
+  font-size: 1rem;
+  color: #22223b;
+}
+
+.reclamos-admin-table-container {
+  background: #f7f9fb;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+  overflow-x: auto;
+  border: 1px solid #dbe2ef;
+}
+
+.reclamos-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.reclamos-admin-table th,
+.reclamos-admin-table td {
+  padding: 14px;
+  text-align: left;
+}
+
+.reclamos-admin-table th {
+  background: #dde7f2;
+  font-weight: 700;
+  color: #22223b;
+}
+
+.reclamos-admin-table-empty {
+  text-align: center;
+  padding: 24px;
+  color: #495057;
+}
+
+.reclamos-admin-table tbody tr {
+  border-bottom: 1px solid #dbe2ef;
+  transition: background 0.15s;
+}
+
+.reclamos-admin-table tbody tr:hover {
+  background: #e9ecef;
+}
+
+.reclamos-admin-estado {
+  padding: 7px 20px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+  border: 1px solid #b8c1ec;
+}
+
+.reclamos-admin-estado.pendiente {
+  color: #22223b;
+  background: #e9ecef;
+  border: 1px solid #adb5bd;
+}
+
+.reclamos-admin-estado.resuelto {
+  color: #197278;
+  background: #dde7f2;
+  border: 1px solid #b8c1ec;
+}
+
+.btn-estado,
+.btn-editar,
+.btn-eliminar {
+  border-radius: 7px;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  cursor: pointer;
+  margin-right: 8px;
+  border: 1px solid #b8c1ec;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-estado {
+  background: #dde7f2;
+  color: #22223b;
+}
+
+.btn-estado:hover {
+  background: #b8c1ec;
+}
+
+.btn-editar {
+  background: #b8c1ec;
+  color: #22223b;
+}
+
+.btn-editar:hover {
+  background: #dde7f2;
+}
+
+.btn-eliminar {
+  background: #e9ecef;
+  color: #495057;
+  border: 1px solid #adb5bd;
+}
+
+.btn-eliminar:hover {
+  background: #adb5bd;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .reclamos-admin-cards,
+  .reclamos-admin-form,
+  .reclamos-admin-busqueda {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .reclamos-admin-table th,
+  .reclamos-admin-table td {
+    padding: 10px 6px;
+  }
+}

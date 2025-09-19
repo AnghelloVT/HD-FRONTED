@@ -1,0 +1,37 @@
+.content-container {
+  margin-left: 240px;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  width: calc(100vw - 240px);
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.table-container {
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.075);
+}
+
+.card {
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  margin-right: 0.5rem;
+}
